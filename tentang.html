@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekilas Berdirinya Boutique Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'segoe UI', Roboto, sans-serif;
+        }
+        body {
+            background-color: #fcfafc;
+            color: #333;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 80px auto;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 0 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 40px auto;
+            }
+        }
+        .founder-image img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 15px;
+            box-shadow: 20px 20px 0px #eaddca; /*efek dekorati */
+        }
+        .founder-content {
+            flex: 1;
+        }
+        .year-tag {
+            display: inline-block;
+            background: #eaddca;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c2c2c;
+        }
+        .intro {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        p {
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #666;
+        }
+        .stats {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .stat-item h3 {
+            font-size: 1.5rem;
+            color: #8d6e63;
+        }
+        .btn-contact {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #2c2c2c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn-contact:hover {
+            background-color: #8d6e63;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">Boutique Style</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="harga.html">Daftar Harga</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-founder">
+        <div class="container">
+            <div class="founder-image">
+                <img src="Pendiri.webp" alt="Founder Boutique">
+            </div>
+
+            <div class="founder-content">
+                <span class="year-tag">Est. 2026</span>
+                <h1>Sosok Visioner di Balik Gaya</h1>
+                <p class="intro">
+                    Didirikan pada awal tahun 2026, butik ini lahir dari tangan seorang kurator mode yang percaya bahwa pakaian adalah identitas diri.
+                </p>
+                <p>
+                    Dengan konsep <strong>Boutique Style</strong> yang Eksklusif, seorang pendiri menggabungkan estetika modern dengan sentuhan personal. Fokus utamanya adalah memberikan
+                    pengalaman berbelanja yang mewah/modern namun tetap hangat bagi setaip pelanggan.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>2026</h3>
+                        <p>Tahun Berdiri</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Exclusive</h3>
+                        <p>Curated items</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-contact">Hubungi Pendiri</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;2026 Boutique Style. Hak cipta Dilindungi</p>
+    </footer>
+
+</body>
+</html>

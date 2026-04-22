@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery Boutique Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4d3e81;
+            padding: 20 px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30 px;
+        }
+        .galery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .galery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            height: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .galery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .galery-item :hover img {
+            transform: scale(1.1);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #4d3e81;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: white;
+            font-weight: bold;
+        }
+        .galery-item:hover .overlay {
+            opacity: 1;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">Boutique Style</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="harga.html">Daftar Harga</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Galery Boutique Style</h1>
+    </header>
+
+    <main class="galery-container">
+        <div class="galery-item">
+            <img src="1000076528 (1).jpg" alt="Abaya sport" loading="lazy">
+            <div class="overlay"><span>Lihat Foto</span></div>
+
+            <div class="galery-item">
+                <img src="1000076502.jpg" alt="Hoodie" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="1000076501.jpg" alt="Dress" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span>
+            </div>
+
+            <div class="galery-item">
+                <img src="1000076500.jpg" alt="Dress" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="1000076497.jpg" alt="Dress" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="1000076496.jpg" alt="Dress" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            
+            <div class="galery-item">
+                <img src="galery 1.jpg" alt="Dress" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="galery 2.jpg" alt="Hoodie" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="galery 3.jpg" alt="Dress" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="galery 4.png" alt="Abaya" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="galery 8.jpg" alt="Hoodie" loading="lazy">
+                <div class=""overlay><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="galery5.jpg" alt="Abaya" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="galery6.jpg" alt="Dress" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+
+            <div class="galery-item">
+                <img src="galery8.jpg" alt="Hoodie" loading="lazy">
+                <div class="overlay"><span>Lihat Foto</span></div>
+            </div>
+            
+        </div>
+        
+    </main>
+
+     <footer>
+        <p>&copy;2026 Boutique Style. Hak cipta Dilindungi</p>
+    </footer>
+
+</body>
+</html>

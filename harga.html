@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga - Boutique Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .price-table {
+            width: 80%;
+            margin: 0 auto 50px auto;
+            border-collapse: collapse;
+            text-align: left;
+            animation: fadeIn 1s;
+        }
+        .price-table th, .price-table td {
+            padding: 15px;
+            border-bottom: 1px solid #5a5ba0;
+        }
+        .price-table th {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+        .price-table tr:nth-child(even) {
+            background-color: rgb(83, 57, 107);
+        }
+        .price-table td:last-child {
+            font-weight: 700;
+            color: rgb(45, 61, 90);/* warna biru untuk harga */
+            text-align: right;
+        }
+        .price-table h3 {
+            margin-top: 40px;
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.8em;
+        }
+        @media (max-width : 768px) {
+            .price-table {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">Boutique Style</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="harga.html">Daftar Harga</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="height: 40vh;">
+        <div class="hero-image" style="background-image: url(https://id.images.search.yahoo.com/search/images?p=background+toko+online&fr=mcafee&type=E211ID1357G0&imgurl=https%3A%2F%2Fcdn.kibrispdr.org%2Fdata%2F14%2Fbackground-untuk-toko-online-5.jpg#id=9&iurl=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F2677231.jpg&action=click);"></div>
+        <div class="hero-content">
+            <h1 style="font-size: 3em;" class="fade-in">Harga Terbaik, Layanan Memuaskan</h1>
+            <p class="fade-in" style="animation-delay: 0.2s;">Terjangkau, Tanpa Biaya Tersembunyi.</p>
+        </div>
+    </header>
+
+    <section class="services">
+
+        <table class="price-table">
+            <h3>Pilihan pengiriman (Layanan Kurir)</h3>
+            <thead>
+                <tr>
+                    <th>Layanan</th>
+                    <th>Waktu pengiriman</th>
+                    <th>Harga/kg</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reguler</td>
+                    <td>2-3 hari</td>
+                    <td>12.000-25.000</td>
+                </tr>
+                <tr>
+                    <td>One Day Service</td>
+                    <td>24 Jam</td>
+                    <td>8.000-12.000</td>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td>6 Jam</td>
+                    <td>12.000-15.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="price-table">
+            <h3>Harga Jasa Titip</h3>
+            <thead>
+                <tr>
+                    <th>Layanan</th>
+                    <th>Estimasi Waktu</th>
+                    <th>Harga Penitipan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reguler</td>
+                    <td>1 Bulan</td>
+                    <td>50.000-80.000</td>
+                </tr>
+                <tr>
+                    <td>One Day Service</td> (Antar Kota Dekat)
+                    <td>3 Minggu</td>
+                    <td>15.000-30.000</td>
+                </tr>
+                <tr>
+                    <td>Express</td>
+                    <td>1 Minggu</td>
+                    <td>8.000-12.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="text-align: center; margin-top: 30px; font-style: italic;">Harga dapat berubah sewaktu-waktu .Tergantung berapa lama order/titipan</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Boutique Style. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
